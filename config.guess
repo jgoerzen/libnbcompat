@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $NetBSD: config.guess,v 1.1 2003/03/31 05:02:25 grant Exp $
+# $NetBSD: config.guess,v 1.1.1.1 2003/03/31 05:02:25 grant Exp $
 #
 # Attempt to guess a canonical system name.
 #   Copyright (C) 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999,

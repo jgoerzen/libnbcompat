@@ -1,4 +1,4 @@
-/*	$NetBSD: pwcache.h,v 1.1 2003/03/31 05:02:59 grant Exp $	*/
+/*	$NetBSD: pwcache.h,v 1.1.1.1 2003/03/31 05:02:59 grant Exp $	*/
 
 /*-
  * Copyright (c) 1992 Keith Muller.

@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $NetBSD: config.sub,v 1.1 2003/03/31 05:02:27 grant Exp $
+# $NetBSD: config.sub,v 1.1.1.1 2003/03/31 05:02:27 grant Exp $
 #
 # Configuration validation subroutine script.
 #   Copyright (C) 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999,

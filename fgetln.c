@@ -1,4 +1,4 @@
-/*	$NetBSD: fgetln.c,v 1.1 2003/03/31 05:02:43 grant Exp $	*/
+/*	$NetBSD: fgetln.c,v 1.1.1.1 2003/03/31 05:02:43 grant Exp $	*/
 
 /*-
  * Copyright (c) 1998 The NetBSD Foundation, Inc.

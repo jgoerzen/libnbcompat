@@ -1,4 +1,4 @@
-/*	$NetBSD: stat_flags.c,v 1.1 2003/03/31 05:03:04 grant Exp $	*/
+/*	$NetBSD: stat_flags.c,v 1.1.1.1 2003/03/31 05:03:04 grant Exp $	*/
 
 /*-
  * Copyright (c) 1993
@@ -45,7 +45,7 @@
 #if 0
 static char sccsid[] = "@(#)stat_flags.c	8.2 (Berkeley) 7/28/94";
 #else
-__RCSID("$NetBSD: stat_flags.c,v 1.1 2003/03/31 05:03:04 grant Exp $");
+__RCSID("$NetBSD: stat_flags.c,v 1.1.1.1 2003/03/31 05:03:04 grant Exp $");
 #endif
 #endif /* not lint */
 

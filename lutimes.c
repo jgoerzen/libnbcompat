@@ -1,4 +1,4 @@
-/*	$NetBSD: lutimes.c,v 1.1 2003/03/31 05:02:54 grant Exp $	*/
+/*	$NetBSD: lutimes.c,v 1.1.1.1 2003/03/31 05:02:54 grant Exp $	*/
 
 /*-
  * Copyright (c) 2002 The NetBSD Foundation, Inc.

@@ -1,4 +1,4 @@
-/*	$NetBSD: stat_flags.h,v 1.1 2003/03/31 05:03:04 grant Exp $	*/
+/*	$NetBSD: stat_flags.h,v 1.1.1.1 2003/03/31 05:03:04 grant Exp $	*/
 
 /*-
  * Copyright (c) 1991, 1993

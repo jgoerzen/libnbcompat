@@ -1,4 +1,4 @@
-/*	$NetBSD: __fts13.c,v 1.1 2003/03/31 05:02:22 grant Exp $	*/
+/*	$NetBSD: __fts13.c,v 1.1.1.1 2003/03/31 05:02:22 grant Exp $	*/
 
 /*-
  * Copyright (c) 1990, 1993, 1994
@@ -43,7 +43,7 @@
 #if 0
 static char sccsid[] = "@(#)fts.c	8.6 (Berkeley) 8/14/94";
 #else
-__RCSID("$NetBSD: __fts13.c,v 1.1 2003/03/31 05:02:22 grant Exp $");
+__RCSID("$NetBSD: __fts13.c,v 1.1.1.1 2003/03/31 05:02:22 grant Exp $");
 #endif
 #endif /* LIBC_SCCS and not lint */
 

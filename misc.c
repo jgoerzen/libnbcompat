@@ -1,4 +1,4 @@
-/*	$NetBSD: misc.c,v 1.1 2003/03/31 05:02:55 grant Exp $	*/
+/*	$NetBSD: misc.c,v 1.1.1.1 2003/03/31 05:02:55 grant Exp $	*/
 
 /*-
  * Copyright (c) 1991, 1993
@@ -42,7 +42,7 @@
 #endif
 
 #if defined(__RCSID) && !defined(lint)
-__RCSID("$NetBSD: misc.c,v 1.1 2003/03/31 05:02:55 grant Exp $");
+__RCSID("$NetBSD: misc.c,v 1.1.1.1 2003/03/31 05:02:55 grant Exp $");
 #endif /* not lint */
 
 #include <sys/types.h>

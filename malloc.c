@@ -1,4 +1,4 @@
-/*	$NetBSD: malloc.c,v 1.1 2003/03/31 05:02:54 grant Exp $	*/
+/*	$NetBSD: malloc.c,v 1.1.1.1 2003/03/31 05:02:54 grant Exp $	*/
 
 #if ! HAVE_MALLOC
 #undef malloc

@@ -1,5 +1,5 @@
-/*	$Id: ftpglob.h,v 1.1 2003/03/31 05:02:45 grant Exp $	*/
-/*	$NetBSD: ftpglob.h,v 1.1 2003/03/31 05:02:45 grant Exp $	*/
+/*	$Id: ftpglob.h,v 1.1.1.1 2003/03/31 05:02:45 grant Exp $	*/
+/*	$NetBSD: ftpglob.h,v 1.1.1.1 2003/03/31 05:02:45 grant Exp $	*/
 
 /*
  * Copyright (c) 1989, 1993

@@ -1,5 +1,5 @@
-/*	$Id: strsep.c,v 1.1 2003/03/31 05:03:05 grant Exp $	*/
-/*	$NetBSD: strsep.c,v 1.1 2003/03/31 05:03:05 grant Exp $	*/
+/*	$Id: strsep.c,v 1.1.1.1 2003/03/31 05:03:05 grant Exp $	*/
+/*	$NetBSD: strsep.c,v 1.1.1.1 2003/03/31 05:03:05 grant Exp $	*/
 
 /*-
  * Copyright (c) 1990, 1993

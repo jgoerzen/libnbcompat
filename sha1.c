@@ -1,4 +1,4 @@
-/*	$NetBSD: sha1.c,v 1.1 2003/03/31 05:02:50 grant Exp $	*/
+/*	$NetBSD: sha1.c,v 1.1.1.1 2003/03/31 05:02:50 grant Exp $	*/
 /*	$OpenBSD: sha1.c,v 1.9 1997/07/23 21:12:32 kstailey Exp $	*/
 
 /*

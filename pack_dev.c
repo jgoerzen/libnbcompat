@@ -1,4 +1,4 @@
-/*	$NetBSD: pack_dev.c,v 1.1 2003/03/31 05:02:47 grant Exp $	*/
+/*	$NetBSD: pack_dev.c,v 1.1.1.1 2003/03/31 05:02:47 grant Exp $	*/
 
 /*-
  * Copyright (c) 1998, 2001 The NetBSD Foundation, Inc.
@@ -46,7 +46,7 @@
 #endif
 
 #if defined(__RCSID) && !defined(lint)
-__RCSID("$NetBSD: pack_dev.c,v 1.1 2003/03/31 05:02:47 grant Exp $");
+__RCSID("$NetBSD: pack_dev.c,v 1.1.1.1 2003/03/31 05:02:47 grant Exp $");
 #endif /* not lint */
 
 #include <sys/types.h>

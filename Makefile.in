@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.in,v 1.1 2003/03/31 05:02:20 grant Exp $
+# $NetBSD: Makefile.in,v 1.1.1.1 2003/03/31 05:02:20 grant Exp $
 #
 
 srcdir	= @srcdir@

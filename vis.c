@@ -1,4 +1,4 @@
-/*	$NetBSD: vis.c,v 1.1 2003/03/31 05:02:59 grant Exp $	*/
+/*	$NetBSD: vis.c,v 1.1.1.1 2003/03/31 05:02:59 grant Exp $	*/
 
 /*-
  * Copyright (c) 1999 The NetBSD Foundation, Inc.
@@ -43,7 +43,7 @@
 #endif
 
 #if defined(LIBC_SCCS) && !defined(lint)
-__RCSID("$NetBSD: vis.c,v 1.1 2003/03/31 05:02:59 grant Exp $");
+__RCSID("$NetBSD: vis.c,v 1.1.1.1 2003/03/31 05:02:59 grant Exp $");
 #endif /* LIBC_SCCS and not lint */
 
 #include "namespace.h"

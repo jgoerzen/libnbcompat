@@ -1,4 +1,4 @@
-/*	$NetBSD: rmd160hl.c,v 1.1 2003/03/31 05:02:57 grant Exp $	*/
+/*	$NetBSD: rmd160hl.c,v 1.1.1.1 2003/03/31 05:02:57 grant Exp $	*/
 
 /* rmd160hl.c
  * ----------------------------------------------------------------------------
@@ -18,7 +18,7 @@
 #include <nbtypes.h>
 
 #ifndef lint
-__RCSID("$NetBSD: rmd160hl.c,v 1.1 2003/03/31 05:02:57 grant Exp $");
+__RCSID("$NetBSD: rmd160hl.c,v 1.1.1.1 2003/03/31 05:02:57 grant Exp $");
 #endif	/* not lint */
 
 

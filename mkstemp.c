@@ -1,5 +1,5 @@
-/*	$Id: mkstemp.c,v 1.1 2003/03/31 05:02:56 grant Exp $	*/
-/*	$NetBSD: mkstemp.c,v 1.1 2003/03/31 05:02:56 grant Exp $	*/
+/*	$Id: mkstemp.c,v 1.1.1.1 2003/03/31 05:02:56 grant Exp $	*/
+/*	$NetBSD: mkstemp.c,v 1.1.1.1 2003/03/31 05:02:56 grant Exp $	*/
 
 /*
  * Copyright (c) 1987, 1993

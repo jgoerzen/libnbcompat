@@ -1,4 +1,4 @@
-/*	$NetBSD: pwcache.c,v 1.1 2003/03/31 05:02:58 grant Exp $	*/
+/*	$NetBSD: pwcache.c,v 1.1.1.1 2003/03/31 05:02:58 grant Exp $	*/
 
 /*-
  * Copyright (c) 1992 Keith Muller.
@@ -80,7 +80,7 @@
 #if 0
 static char sccsid[] = "@(#)cache.c	8.1 (Berkeley) 5/31/93";
 #else
-__RCSID("$NetBSD: pwcache.c,v 1.1 2003/03/31 05:02:58 grant Exp $");
+__RCSID("$NetBSD: pwcache.c,v 1.1.1.1 2003/03/31 05:02:58 grant Exp $");
 #endif
 #endif /* LIBC_SCCS and not lint */
 

@@ -1,4 +1,4 @@
-/*	$NetBSD: getid.c,v 1.1 2003/03/31 05:02:46 grant Exp $	*/
+/*	$NetBSD: getid.c,v 1.1.1.1 2003/03/31 05:02:46 grant Exp $	*/
 /*	from: NetBSD: getpwent.c,v 1.48 2000/10/03 03:22:26 enami Exp */
 /*	from: NetBSD: getgrent.c,v 1.41 2002/01/12 23:51:30 lukem Exp */
 
