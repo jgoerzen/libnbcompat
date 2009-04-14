@@ -1,4 +1,4 @@
-/*	$NetBSD: getopt_long.c,v 1.11 2009/04/14 17:34:41 joerg Exp $	*/
+/*	$NetBSD: getopt_long.c,v 1.10.2.1 2009/04/14 21:18:35 tron Exp $	*/
 
 /*-
  * Copyright (c) 2000 The NetBSD Foundation, Inc.
@@ -35,7 +35,7 @@
 
 #include <nbcompat.h>
 #include <nbcompat/cdefs.h>
-__RCSID("$NetBSD: getopt_long.c,v 1.11 2009/04/14 17:34:41 joerg Exp $");
+__RCSID("$NetBSD: getopt_long.c,v 1.10.2.1 2009/04/14 21:18:35 tron Exp $");
 
 #if 0
 #include "namespace.h"
