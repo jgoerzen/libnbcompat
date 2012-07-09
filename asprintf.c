@@ -1,4 +1,4 @@
-/* $NetBSD: asprintf.c,v 1.3 2012/07/02 16:02:53 joerg Exp $ */
+/* $NetBSD: asprintf.c,v 1.2.44.1 2012/07/09 08:34:52 tron Exp $ */
 
 /*-
  * Copyright (c) 2007 Joerg Sonnenberger <joerg@NetBSD.org>.

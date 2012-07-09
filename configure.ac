@@ -1,4 +1,4 @@
-dnl $NetBSD: configure.ac,v 1.79 2012/07/02 16:02:53 joerg Exp $
+dnl $NetBSD: configure.ac,v 1.78.6.1 2012/07/09 08:34:53 tron Exp $
 
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.52)
