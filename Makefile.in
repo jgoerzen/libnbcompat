@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.in,v 1.39 2015/05/02 12:52:59 joerg Exp $
+# $NetBSD: Makefile.in,v 1.36.48.1 2015/05/08 18:33:01 hiramatsu Exp $
 #
 
 srcdir=		@srcdir@
