@@ -1,10 +1,9 @@
 libnbcompat for Debian
 ---------------------
 
-<this file describes information about the source package, see Debian policy
-manual section 4.14. You WILL either need to modify or delete this file>
+Imported to git using:
 
-
+git cvsimport -v -d :pserver:anoncvs@anoncvs.NetBSD.org:/cvsroot pkgsrc/pkgtools/libnbcompat/files
 
  -- John Goerzen <jgoerzen@complete.org>  Wed, 03 Oct 2018 21:04:59 -0500
 
