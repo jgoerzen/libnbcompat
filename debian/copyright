@@ -4,7 +4,7 @@ Source: :pserver:anoncvs@anoncvs.NetBSD.org:/cvsroot pkgsrc/pkgtools/libnbcompat
 
 Files: *
 Copyright: 2004 The NetBSD Foundation, Inc.
-License: BSD-3-Clause
+License: BSD-2-Clause
 
 Files: debian/*
 Copyright: 2018 John Goerzen <jgoerzen@complete.org>

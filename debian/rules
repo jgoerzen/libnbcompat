@@ -13,6 +13,7 @@
 # package maintainers to append LDFLAGS
 #export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
+export MAKE = bmake
 
 %:
 	dh $@ --with autotools_dev
@@ -25,3 +26,7 @@
 
 override_dh_auto_configure:
 	dh_auto_configure -- --enable-db --enable-bsd-getopt CPPFLAGS="$(CPPFLAGS) -D_GNU_SOURCE"
+
+# No tests
+override_dh_auto_test:
+	true
