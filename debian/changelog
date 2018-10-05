@@ -1,3 +1,9 @@
+libnbcompat (20180822-5) unstable; urgency=low
+
+  * Do not link -lbsd; causes segfault
+
+ -- John Goerzen <jgoerzen@complete.org>  Fri, 05 Oct 2018 08:49:52 -0500
+
 libnbcompat (20180822-4) unstable; urgency=low
 
   * More build-deps, to reduce size of this package.
