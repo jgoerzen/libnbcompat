@@ -6,10 +6,6 @@ Files: *
 Copyright: 2004 The NetBSD Foundation, Inc.
 License: BSD-2-Clause
 
-Files: debian/*
-Copyright: 2018 John Goerzen <jgoerzen@complete.org>
-License: BSD-2-Clause
-
 License: BSD-2-Clause
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
@@ -31,3 +27,573 @@ License: BSD-2-Clause
  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Files: __fts13.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: __glob13.c
+Copyright: Copyright: 1989, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: __unsetenv13.c
+Copyright: Copyright: 1987, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: engine.c
+Copyright: Copyright (c) 1992, 1993, 1994 The Regents of the University of California & Henry Spencer
+License: BSD-4-clause
+
+Files: config.guess
+Copyright: Copyright: 1992-2010 Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: config.sub
+Copyright: Copyright: 1992-2010 Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: configure
+Copyright: Copyright: 1992-1996, 1998-2012 Free Software Foundation, Inc.
+License: FSF Unlimited
+
+Files: db/btree/bt_close.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/btree/bt_conv.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/btree/bt_debug.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/btree/bt_delete.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/btree/bt_get.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/btree/bt_open.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/btree/bt_overflow.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/btree/bt_page.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/btree/bt_put.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/btree/bt_search.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/btree/bt_seq.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/btree/bt_split.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/btree/bt_utils.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/btree/btree.h
+Copyright: Copyright: 1991, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/btree/extern.h
+Copyright: Copyright: 1991, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/db/db.c
+Copyright: Copyright: 1991, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/hash/extern.h
+Copyright: Copyright: 1991, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/hash/hash.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/hash/hash.h
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/hash/hash_bigkey.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/hash/hash_buf.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/hash/hash_func.c
+Copyright: Copyright: 1990, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/hash/hash_log2.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/hash/hash_page.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/hash/ndbm.c
+Copyright: Copyright: 1990, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/hash/ndbmdatum.c
+Copyright: Copyright: 1990, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/hash/page.h
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/mpool/mpool.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/recno/extern.h
+Copyright: Copyright: 1991, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/recno/rec_close.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/recno/rec_delete.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/recno/rec_get.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/recno/rec_open.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/recno/rec_put.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/recno/rec_search.c
+Copyright: Copyright: 1990, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/recno/rec_seq.c
+Copyright: Copyright: 1991, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/recno/rec_utils.c
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: db/recno/recno.h
+Copyright: Copyright: 1991, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: debian/README.source
+Copyright:  2018, John Goerzen <jgoerzen@complete.org>
+License: GPL-2+
+
+Files: debian/changelog
+Copyright:  2018, John Goerzen <jgoerzen@complete.org>
+License: GPL-2+
+
+Files: debian/compat
+Copyright:  2018, John Goerzen <jgoerzen@complete.org>
+License: GPL-2+
+
+Files: debian/control
+Copyright:  2018, John Goerzen <jgoerzen@complete.org>
+License: GPL-2+
+
+Files: debian/copyright
+Copyright:  2018, John Goerzen <jgoerzen@complete.org>
+License: GPL-2+
+
+Files: debian/libnbcompat-dev.dirs
+Copyright:  2018, John Goerzen <jgoerzen@complete.org>
+License: GPL-2+
+
+Files: debian/rules
+Copyright:  2018, John Goerzen <jgoerzen@complete.org>
+License: GPL-2+
+
+Files: debian/source/format
+Copyright:  2018, John Goerzen <jgoerzen@complete.org>
+License: GPL-2+
+
+Files: err.c
+Copyright: Copyright: 1997-2000 Luke Mewburn <lukem@netbsd.org>.
+License: BSD-3-clause
+
+Files: fgetln.c
+Copyright: Copyright: 1998 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: findenv.c
+Copyright: Copyright: 1987, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: fnmatch.c
+Copyright: Copyright: 1989, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: fparseln.c
+Copyright: Copyright: 1997 Christos Zoulas.
+License: BSD-4-clause
+
+Files: getdelim.c
+Copyright: Copyright: 2011 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: getenv.c
+Copyright: Copyright: 1987, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: getline.c
+Copyright: Copyright: 2011 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: getopt.c
+Copyright: Copyright: 1987, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: getopt_long.c
+Copyright: Copyright: 2000 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: gettemp.c
+Copyright: Copyright: 1987, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: isblank.c
+ Copyright: UNIX System Laboratories, Inc. & 1989 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: lchflags.c
+Copyright: Copyright: 2002 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: lchmod.c
+Copyright: Copyright: 2002 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: lchown.c
+Copyright: Copyright: 2002 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: lutimes.c
+Copyright: Copyright: 2002 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: md5c.c
+Copyright: Copyright: 1991 -2, RSA Data Security, Inc. Created 1991. All
+License: NTP
+
+Files: mkdtemp.c
+Copyright: Copyright: 1987, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: mkstemp.c
+Copyright: Copyright: 1987, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: nbcompat/assert.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/cdefs.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/db.h
+Copyright: Copyright: 1990, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: nbcompat/dirent.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/endian.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/err.h
+Copyright: Copyright: 1989, 1993 The Regents of the University of California.
+License: BSD-4-clause
+
+Files: nbcompat/fnmatch.h
+Copyright: Copyright: 1992-1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: nbcompat/fts.h
+Copyright: Copyright: 1989, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: nbcompat/getopt.h
+Copyright: Copyright: 2000 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/glob.h
+Copyright: Copyright: 1989, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: nbcompat/grp.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/limits.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/md5.h
+Copyright: Copyright: 1991 -2, RSA Data Security, Inc. Created 1991. All
+License: NTP
+
+Files: nbcompat/mpool.h
+Copyright: Copyright: 1991, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: nbcompat/ndbm.h
+Copyright: Copyright: 1990, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: nbcompat/netdb.h
+ Copyright: 2000-2003 Damien Miller & 1999 WIDE Project.
+License: BSD-3-clause
+
+Files: nbcompat/param.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/paths.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/poll.h
+Copyright: Copyright: 1998 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/pwd.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/queue.h
+Copyright: Copyright: 1991, 1993 The Regents of the University of California.
+License: BSD-4-clause
+
+Files: nbcompat/regex.h
+Copyright: Copyright: 1992-1993 The Regents of the University of California, Henry Spencer
+License: BSD-4-clause
+
+Files: nbcompat/rmd160.h
+Copyright: Copyright: Katholieke Universiteit Leuven 1996
+License: 
+
+Files: nbcompat/stat.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/statvfs.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/stdbool.h
+Copyright: Copyright: 2009 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/stdio.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/stdlib.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/string.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/termcap.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/time.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/types.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/tzfile.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/unistd.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/util.h
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: nbcompat/vis.h
+Copyright: Copyright: 1990, 1993 The Regents of the University of California.
+License: BSD-4-clause
+
+Files: poll.c
+Copyright: Copyright: 2003 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: private/cclass.h
+Copyright: Copyright: 1992-1994 The Regents of the University of California.
+License: BSD-4-clause
+
+Files: private/cname.h
+Copyright: Copyright: 1992-1994 The Regents of the University of California.
+License: BSD-4-clause
+
+Files: private/pwcache.h
+ Copyright: 1992-1993 The Regents of the University of California & 1992 Keith Muller.
+License: BSD-3-clause
+
+Files: private/regex2.h
+Copyright: Copyright: 1992-1994 The Regents of the University of California.
+License: BSD-4-clause
+
+Files: private/utils.h
+Copyright: Copyright: 1992-1994 The Regents of the University of California.
+License: BSD-4-clause
+
+Files: pwcache.c
+ Copyright: 1992-1993 The Regents of the University of California & 1992 Keith Muller.
+License: BSD-3-clause
+
+Files: regcomp.c
+Copyright: Copyright: 1992-1994 The Regents of the University of California.
+License: BSD-4-clause
+
+Files: regerror.c
+Copyright: Copyright: 1992-1994 The Regents of the University of California.
+License: BSD-4-clause
+
+Files: regexec.c
+Copyright: Copyright: 1992-1994 The Regents of the University of California.
+License: BSD-4-clause
+
+Files: regfree.c
+Copyright: Copyright: 1992-1994 The Regents of the University of California.
+License: BSD-4-clause
+
+Files: rmd160.c
+Copyright: Copyright: Katholieke Universiteit Leuven
+License: 
+
+Files: rmd160hl.c
+Copyright: Poul-Henning Kamp <phk@login.dkuug.dk>
+License: Beerware
+
+License: Beerware
+ "THE BEER-WARE LICENSE" (Revision 42):
+ <phk@login.dkuug.dk> wrote this file.  As long as you retain this notice you
+ can do whatever you want with this stuff. If we meet some day, and you think
+ this stuff is worth it, you can buy me a beer in return.
+
+Files: setgroupent.c
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: setmode.c
+Copyright: Copyright: 1989, 1993-1994 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: setpassent.c
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: setprogname.c
+Copyright: Copyright: 2001 Christopher G. Demetriou
+License: BSD-3-clause
+
+Files: sha2.c
+Copyright: Copyright: 2000 Aaron D. Gifford.
+License: BSD-3-clause
+
+Files: sha2hl.c
+Copyright: Copyright: 2000 Aaron D. Gifford.
+License: BSD-3-clause
+
+Files: shquote.c
+Copyright: Copyright: 2001 Christopher G. Demetriou
+License: BSD-3-clause
+
+Files: snprintf.c
+Copyright: Copyright: 2007 Tobias Nygren <tnn@NetBSD.org>
+License: BSD-2-clause
+
+Files: src2nbcompat
+Copyright: Copyright: 2003 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: statvfs.c
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: strdup.c
+Copyright: Copyright: 1988, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: strlcpy.c
+Copyright: Copyright: 1998 Todd C. Miller <Todd.Miller@courtesan.com>
+License: ISC
+
+Files: strmode.c
+Copyright: Copyright: 1990, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: strsep.c
+Copyright: Copyright: 1990, 1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: strtoll.c
+Copyright: Copyright: 1992-1993 The Regents of the University of California.
+License: BSD-3-clause
+
+Files: timegm.c
+Copyright: Copyright: 2001-2006 NLnet Labs.
+License: BSD-3-clause
+
+Files: usleep.c
+Copyright: Copyright: 1999-2000 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: utimes.c
+Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
+License: BSD-2-clause
+
+Files: vis.c
+Copyright: Copyright: 1989, 1993 The Regents of the University of California.
+License: BSD-4-clause
+
+Files: warn.c
+Copyright: Copyright: 1997-2000 Luke Mewburn <lukem@netbsd.org>.
+License: BSD-3-clause
+
