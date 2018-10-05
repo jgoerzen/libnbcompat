@@ -285,7 +285,7 @@ Copyright: Copyright: 1987, 1993 The Regents of the University of California.
 License: BSD-3-clause
 
 Files: isblank.c
- Copyright: UNIX System Laboratories, Inc. & 1989 The Regents of the University of California.
+Copyright: UNIX System Laboratories, Inc. & 1989 The Regents of the University of California.
 License: BSD-3-clause
 
 Files: lchflags.c
@@ -377,7 +377,7 @@ Copyright: Copyright: 1990, 1993 The Regents of the University of California.
 License: BSD-3-clause
 
 Files: nbcompat/netdb.h
- Copyright: 2000-2003 Damien Miller & 1999 WIDE Project.
+Copyright: 2000-2003 Damien Miller & 1999 WIDE Project.
 License: BSD-3-clause
 
 Files: nbcompat/param.h
@@ -403,10 +403,6 @@ License: BSD-4-clause
 Files: nbcompat/regex.h
 Copyright: Copyright: 1992-1993 The Regents of the University of California, Henry Spencer
 License: BSD-4-clause
-
-Files: nbcompat/rmd160.h
-Copyright: Copyright: Katholieke Universiteit Leuven 1996
-License: 
 
 Files: nbcompat/stat.h
 Copyright: Copyright: 2004 The NetBSD Foundation, Inc.
@@ -485,7 +481,7 @@ Copyright: Copyright: 1992-1994 The Regents of the University of California.
 License: BSD-4-clause
 
 Files: pwcache.c
- Copyright: 1992-1993 The Regents of the University of California & 1992 Keith Muller.
+Copyright: 1992-1993 The Regents of the University of California & 1992 Keith Muller.
 License: BSD-3-clause
 
 Files: regcomp.c
@@ -503,10 +499,6 @@ License: BSD-4-clause
 Files: regfree.c
 Copyright: Copyright: 1992-1994 The Regents of the University of California.
 License: BSD-4-clause
-
-Files: rmd160.c
-Copyright: Copyright: Katholieke Universiteit Leuven
-License: 
 
 Files: rmd160hl.c
 Copyright: Poul-Henning Kamp <phk@login.dkuug.dk>
