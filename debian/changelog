@@ -1,3 +1,9 @@
+libnbcompat (20180822-3) unstable; urgency=low
+
+  * Add additional build-deps
+
+ -- John Goerzen <jgoerzen@complete.org>  Fri, 05 Oct 2018 07:42:24 -0500
+
 libnbcompat (20180822-2) unstable; urgency=low
 
   * Analyze licenses and note additional info in debian/copyright.
