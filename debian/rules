@@ -25,7 +25,7 @@ export MAKE = bmake
 #	dh_auto_configure -- #	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
 
 override_dh_auto_configure:
-	dh_auto_configure -- --enable-db --enable-bsd-getopt CPPFLAGS="$(CPPFLAGS) -D_GNU_SOURCE" LIBS="-lmd"
+	dh_auto_configure -- --enable-db --enable-bsd-getopt CPPFLAGS="$(CPPFLAGS) -D_GNU_SOURCE" LIBS="-lmd -lbsd"
 
 # No tests
 override_dh_auto_test:

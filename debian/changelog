@@ -1,3 +1,9 @@
+libnbcompat (20180822-4) unstable; urgency=medium
+
+  * More build-deps
+
+ -- John Goerzen <jgoerzen@complete.org>  Fri, 05 Oct 2018 08:10:56 -0500
+
 libnbcompat (20180822-3) unstable; urgency=low
 
   * Add additional build-deps
