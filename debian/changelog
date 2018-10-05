@@ -1,3 +1,9 @@
+libnbcompat (20180822-2) unstable; urgency=low
+
+  * Analyze licenses and note additional info in debian/copyright.  CLoses: #910331.
+
+ -- John Goerzen <jgoerzen@complete.org>  Thu, 04 Oct 2018 20:34:13 -0500
+
 libnbcompat (20180822-1) unstable; urgency=medium
 
   * Initial release (Closes: #910252)
