@@ -1,6 +1,6 @@
-libnbcompat (20180822-4) unstable; urgency=medium
+libnbcompat (20180822-4) unstable; urgency=low
 
-  * More build-deps
+  * More build-deps, to reduce size of this package.
 
  -- John Goerzen <jgoerzen@complete.org>  Fri, 05 Oct 2018 08:10:56 -0500
 
