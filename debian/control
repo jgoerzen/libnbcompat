@@ -1,7 +1,7 @@
 Source: libnbcompat
 Priority: optional
 Maintainer: John Goerzen <jgoerzen@complete.org>
-Build-Depends: debhelper (>= 9), autotools-dev, bmake, libncurses-dev, libbsd-dev, libmd-dev
+Build-Depends: debhelper, autotools-dev, bmake, libncurses-dev, libbsd-dev, libmd-dev
 Standards-Version: 3.9.8
 Section: libs
 Homepage: http://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/pkgtools/libnbcompat/README.html
