@@ -4,7 +4,7 @@ Maintainer: John Goerzen <jgoerzen@complete.org>
 Build-Depends: debhelper (>= 9.20160114), autotools-dev, bmake, libncurses-dev, libbsd-dev, libmd-dev
 Standards-Version: 3.9.8
 Section: libs
-Homepage: http://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/pkgtools/libnbcompat/README.html
+Homepage: https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/pkgtools/libnbcompat/README.html
 Vcs-Git: https://github.com/jgoerzen/libnbcompat.git
 Vcs-Browser: https://github.com/jgoerzen/libnbcompat
 
