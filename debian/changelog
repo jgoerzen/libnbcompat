@@ -1,3 +1,9 @@
+libnbcompat (20180822-6) UNRELEASED; urgency=medium
+
+  * Drop use of autotools-dev debhelper.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Tue, 27 Sep 2022 23:32:27 -0000
+
 libnbcompat (20180822-5) unstable; urgency=low
 
   * Do not link -lbsd; causes segfault
