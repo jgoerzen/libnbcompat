@@ -16,7 +16,7 @@
 export MAKE = bmake
 
 %:
-	dh $@ --with autotools_dev
+	dh $@
 
 
 # dh_make generated override targets
