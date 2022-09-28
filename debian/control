@@ -1,0 +1,21 @@
+Source: libnbcompat
+Priority: optional
+Maintainer: John Goerzen <jgoerzen@complete.org>
+Build-Depends: debhelper (>= 10~), autotools-dev, bmake, libncurses-dev, libbsd-dev, libmd-dev
+Standards-Version: 3.9.8
+Section: libs
+Homepage: https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/pkgtools/libnbcompat/README.html
+Vcs-Git: https://github.com/jgoerzen/libnbcompat.git
+Vcs-Browser: https://github.com/jgoerzen/libnbcompat
+
+Package: libnbcompat-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends}
+Description: NetBSD pkgsrc compatibility library
+ libnbcompat is designed to let non-NetBSD operating systems execute
+ code that is part of the NetBSD pkgsrc repository.  It is, in
+ particular, required for building the NetBSD (package mtree-netbsd).
+ .
+ This package installs the header and static library files.  libnbcompat
+ is not provided as a shared library.

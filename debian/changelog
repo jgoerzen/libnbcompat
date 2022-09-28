@@ -1,0 +1,38 @@
+libnbcompat (20180822-6) UNRELEASED; urgency=medium
+
+  * Drop use of autotools-dev debhelper.
+  * Use secure URI in Homepage field.
+  * Bump debhelper from deprecated 9 to 10.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Tue, 27 Sep 2022 23:32:27 -0000
+
+libnbcompat (20180822-5) unstable; urgency=low
+
+  * Do not link -lbsd; causes segfault
+
+ -- John Goerzen <jgoerzen@complete.org>  Fri, 05 Oct 2018 08:49:52 -0500
+
+libnbcompat (20180822-4) unstable; urgency=low
+
+  * More build-deps, to reduce size of this package.
+
+ -- John Goerzen <jgoerzen@complete.org>  Fri, 05 Oct 2018 08:10:56 -0500
+
+libnbcompat (20180822-3) unstable; urgency=low
+
+  * Add additional build-deps
+
+ -- John Goerzen <jgoerzen@complete.org>  Fri, 05 Oct 2018 07:42:24 -0500
+
+libnbcompat (20180822-2) unstable; urgency=low
+
+  * Analyze licenses and note additional info in debian/copyright.
+    Closes: #910331.
+
+ -- John Goerzen <jgoerzen@complete.org>  Thu, 04 Oct 2018 20:34:13 -0500
+
+libnbcompat (20180822-1) unstable; urgency=medium
+
+  * Initial release (Closes: #910252)
+
+ -- John Goerzen <jgoerzen@complete.org>  Wed, 03 Oct 2018 21:04:59 -0500
