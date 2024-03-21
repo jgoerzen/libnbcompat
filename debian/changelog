@@ -1,3 +1,10 @@
+libnbcompat (20180822-6) unstable; urgency=medium
+
+  * Remove lchflags, which wasn't working anyway and which called chflags,
+    which had no prototype.  Closes: #1066593.
+
+ -- John Goerzen <jgoerzen@complete.org>  Thu, 21 Mar 2024 07:12:25 -0500
+
 libnbcompat (20180822-5) unstable; urgency=low
 
   * Do not link -lbsd; causes segfault
