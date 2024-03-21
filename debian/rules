@@ -16,13 +16,8 @@
 export MAKE = bmake
 
 %:
-	dh $@ --with autotools_dev
+	dh $@
 
-
-# dh_make generated override targets
-# This is example for Cmake (See https://bugs.debian.org/641051 )
-#override_dh_auto_configure:
-#	dh_auto_configure -- #	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
 
 override_dh_auto_configure:
 	dh_auto_configure -- --enable-db --enable-bsd-getopt CPPFLAGS="$(CPPFLAGS) -D_GNU_SOURCE" LIBS="-lmd"

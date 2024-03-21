@@ -220,10 +220,6 @@ Files: debian/changelog
 Copyright:  2018, John Goerzen <jgoerzen@complete.org>
 License: GPL-2+
 
-Files: debian/compat
-Copyright:  2018, John Goerzen <jgoerzen@complete.org>
-License: GPL-2+
-
 Files: debian/control
 Copyright:  2018, John Goerzen <jgoerzen@complete.org>
 License: GPL-2+
