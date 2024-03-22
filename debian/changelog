@@ -5,6 +5,13 @@ libnbcompat (20180822-6) unstable; urgency=medium
 
  -- John Goerzen <jgoerzen@complete.org>  Thu, 21 Mar 2024 07:12:25 -0500
 
+libnbcompat (20180822-5.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Convert to 3.0 source format. Closes: #1007486
+
+ -- Bastian Germann <bage@debian.org>  Fri, 02 Dec 2022 23:39:57 +0100
+
 libnbcompat (20180822-5) unstable; urgency=low
 
   * Do not link -lbsd; causes segfault
