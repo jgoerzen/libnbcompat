@@ -1,0 +1,24 @@
+Description: Fix warning about no prototype for chflags()
+ This comment in e2fsprogs-1.47.0/lib/e2p/fsetflags.c is relevant:
+ .
+ * Deal with lame glibc's that define this function without actually
+ * implementing it.  Can you say "attractive nuisance", boys and girls?
+ * I knew you could!
+Author: John Goerzen <jgoerzen@complete.org>
+Bug: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1066593
+Last-Update: 2024-03-21
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+Index: libnbcompat-20180822/configure.ac
+===================================================================
+--- libnbcompat-20180822.orig/configure.ac	2024-03-22 08:43:00.023493150 -0500
++++ libnbcompat-20180822/configure.ac	2024-03-22 08:44:06.095492747 -0500
+@@ -306,7 +306,7 @@
+ AC_CHECK_DECLS([isblank(int)], [], [AC_LIBOBJ(isblank)], [#include <ctype.h>])
+ 
+ AC_REPLACE_FUNCS([err fgetln fnmatch fparseln getdelim getenv \
+-	getline lchflags lchmod lchown lutimes mkdtemp mkstemp setenv \
++	getline lchmod lchown lutimes mkdtemp mkstemp setenv \
+ 	setgroupent setpassent setprogname shquote statvfs \
+ 	strerror strlcat strlcpy strmode strsep strtoll unsetenv usleep \
+ 	utimes warn
