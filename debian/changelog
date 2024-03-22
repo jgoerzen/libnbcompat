@@ -1,3 +1,9 @@
+libnbcompat (20180822-7) unstable; urgency=medium
+
+  * Correct handling of -5.1 NMU.
+
+ -- John Goerzen <jgoerzen@complete.org>  Fri, 22 Mar 2024 07:49:25 -0500
+
 libnbcompat (20180822-6) unstable; urgency=medium
 
   * Remove lchflags, which wasn't working anyway and which called chflags,
