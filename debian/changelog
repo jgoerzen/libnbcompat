@@ -1,3 +1,9 @@
+libnbcompat (20240319-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- John Goerzen <jgoerzen@complete.org>  Mon, 25 Mar 2024 17:07:26 -0500
+
 libnbcompat (20180822-7) unstable; urgency=medium
 
   * Correct handling of -5.1 NMU.
