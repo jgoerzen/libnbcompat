@@ -1,8 +1,8 @@
-dnl $NetBSD: configure.ac,v 1.86 2015/09/01 23:17:51 kamil Exp $
+dnl $NetBSD: configure.ac,v 1.91 2024/03/19 00:59:00 nia Exp $
 
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.52)
-AC_INIT([libnbcompat], [20150419], [joerg@NetBSD.org])
+AC_INIT([libnbcompat], [20190708], [joerg@NetBSD.org])
 AC_CONFIG_HEADER(nbcompat/config.h)
 AC_ARG_PROGRAM
 
@@ -14,7 +14,7 @@ AC_SUBST(INCLUDES)
 
 # Checks for programs.
 AC_PROG_MAKE_SET
-AC_PROG_CC
+AC_PROG_CC_C99
 AC_PROG_INSTALL
 AC_PROG_LN_S
 AC_PROG_RANLIB
@@ -366,6 +366,27 @@ if test $need_setmode = yes; then
 	AC_LIBOBJ(setmode)
 fi
 
+need_strnlen=no
+AC_CHECK_FUNCS([strnlen], [:], [need_strnlen=yes])
+
+if test $need_strnlen = yes; then
+        AC_LIBOBJ(strnlen)
+fi
+
+need_strndup=no
+AC_CHECK_FUNCS([strndup], [:], [need_strndup=yes])
+
+if test $need_strndup = yes; then
+        AC_LIBOBJ(strndup)
+fi
+
+need_memrchr=no
+AC_CHECK_FUNCS([memrchr], [:], [need_memrchr=yes])
+
+if test $need_memrchr = yes; then
+        AC_LIBOBJ(memrchr)
+fi
+
 AC_CHECK_DECLS([endgrent, endpwent, setpassent])
 
 need_pwcache=no
@@ -456,31 +477,33 @@ AC_CHECK_MEMBERS([struct dirent.d_namlen, DIR.dd_fd], [:], [:],
 	  # endif
 	  #endif ])
 
-AC_MSG_CHECKING([for dirfd])
-AC_TRY_LINK(
-  [ #include <sys/types.h>
-    #if HAVE_DIRENT_H
-    # include <dirent.h>
-    #else
-    # define dirent direct
-    # if HAVE_SYS_NDIR_H
-    #  include <sys/ndir.h>
-    # endif
-    # if HAVE_SYS_DIR_H
-    #  include <sys/dir.h>
-    # endif
-    # if HAVE_NDIR_H
-    #  include <ndir.h>
-    # endif
-    #endif
-    int dummy_var;
-  ], [ dummy_var = dirfd((DIR *)0) ],
-  [
-	AC_MSG_RESULT(yes)
-	AC_DEFINE([HAVE_DIRFD], [1], [Define if dirfd is either a function or a macro.])
-  ], [	AC_MSG_RESULT(no) ]
-
-)
+AC_CACHE_CHECK([for dirfd], [nb_cv_dirfd],
+    [
+	nb_cv_dirfd=no
+        AC_TRY_LINK(
+          [ #include <sys/types.h>
+            #if HAVE_DIRENT_H
+            # include <dirent.h>
+            #else
+            # define dirent direct
+            # if HAVE_SYS_NDIR_H
+            #  include <sys/ndir.h>
+            # endif
+            # if HAVE_SYS_DIR_H
+            #  include <sys/dir.h>
+            # endif
+            # if HAVE_NDIR_H
+            #  include <ndir.h>
+            # endif
+            #endif
+            int dummy_var;
+          ], [ dummy_var = dirfd((DIR *)0) ],
+          [nb_cv_dirfd=yes])
+])
+if test $nb_cv_dirfd = yes; then
+	AC_DEFINE([HAVE_DIRFD], [1],
+		[Define if dirfd is either a function or a macro.])
+fi
 
 if test $ac_cv_type_long_long = yes; then
 
@@ -488,42 +511,48 @@ dnl		We assume that if sprintf() supports %lld or %qd,
 dnl		then all of *printf() does. If not, disable long long
 dnl		support because we don't know how to display it.
 
-	AC_MSG_CHECKING(*printf() support for %lld)
 	can_printf_longlong=no
-	AC_TRY_RUN([
-		#include <stdio.h>
-		int main() {
-			char buf[100];
-			sprintf(buf, "%lld", 4294967300LL);
-			return (strcmp(buf, "4294967300"));
-		}
-	], [
-		AC_MSG_RESULT(yes)
-		can_printf_longlong=yes
-	], [
-		AC_MSG_RESULT(no)
-	], [:])
 
-	if test $can_printf_longlong != yes; then
-		AC_MSG_CHECKING(*printf() support for %qd)
+	AC_CACHE_CHECK([for *printf() support for %lld],
+	   [nb_cv_printf_lld],
+	   [
+		nb_cv_printf_lld=no
 		AC_TRY_RUN([
 			#include <stdio.h>
 			int main() {
 				char buf[100];
-				sprintf(buf, "%qd", 4294967300LL);
+				sprintf(buf, "%lld", 4294967300LL);
 				return (strcmp(buf, "4294967300"));
 			}
-		], [
-			AC_MSG_RESULT(yes)
-			can_printf_longlong=yes
+		], [nb_cv_printf_lld=yes])
+	])
+	if test $nb_cv_printf_lld = yes; then
+		can_printf_longlong=yes
+	fi
+
+	if test $can_printf_longlong != yes; then
+		AC_CACHE_CHECK([for *printf() support for %qd],
+		    [nb_cv_printf_qd],
+		    [
+			nb_cv_printf_qd=no
+			AC_TRY_RUN([
+				#include <stdio.h>
+				int main() {
+					char buf[100];
+					sprintf(buf, "%qd", 4294967300LL);
+					return (strcmp(buf, "4294967300"));
+				}
+			], [nb_cv_printf_qd=yes])
+		])
+		if test $nb_cv_printf_qd = yes; then
 			AC_DEFINE(HAVE_PRINTF_QD, 1)
 			AH_TEMPLATE([HAVE_PRINTF_QD], [
-				Define to 1 if *printf() uses %qd to print
-				`long long' (otherwise uses %lld).
+				Define to 1 if *printf() uses %qd to
+				print `long long'
+				(otherwise uses %lld).
 			])
-		], [
-			AC_MSG_RESULT(no)
-		], [:])
+			can_printf_longlong=yes
+		fi
 	fi
 
 	if test $can_printf_longlong = yes; then
@@ -541,29 +570,27 @@ fi
 dnl	Check if vsnprintf returns the number of bytes that would have been
 dnl	written, had the buffer been large enough.
 
-AC_MSG_CHECKING(if vsnprintf is standards compliant)
-have_std_vsnprintf=no
-AC_TRY_RUN([
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdarg.h>
-void dotest(char *fmt, ...) {
-	char buf[3];
-	va_list ap;
-	va_start(ap, fmt);
-	exit(snprintf(buf, 3, fmt, ap) == 4 ? 0 : 1);
-}
-int main() {
-	dotest("test");
-}
-], [
-	AC_MSG_RESULT(yes)
-	have_std_vsnprintf=yes
-], [
-	AC_MSG_RESULT(no)
-], [:])
+AC_CACHE_CHECK([if vsnprintf is standards compliant],
+    [nb_cv_std_vsnprintf],
+    [
+	nb_cv_std_vsnprintf=no
+	AC_TRY_RUN([
+		#include <stdio.h>
+		#include <stdlib.h>
+		#include <stdarg.h>
+		void dotest(char *fmt, ...) {
+			char buf[3];
+			va_list ap;
+			va_start(ap, fmt);
+			exit(snprintf(buf, 3, fmt, ap) == 4 ? 0 : 1);
+		}
+		int main() {
+			dotest("test");
+		}
+	], [nb_cv_std_vsnprintf=yes])
+])
 
-if test $have_std_vsnprintf = no; then
+if test nb_cv_std_vsnprintf = no; then
 	AC_LIBOBJ(snprintf)
 fi
 

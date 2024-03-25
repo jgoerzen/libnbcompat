@@ -1,7 +1,7 @@
-/*	$NetBSD: err.h,v 1.5 2018/12/31 11:25:08 triaxx Exp $	*/
+/*	$NetBSD: strndup.c,v 1.2 2024/01/12 19:14:19 wiz Exp $	*/
 
 /*
- * Copyright (c) 1989, 1993
+ * Copyright (c) 1988, 1993
  *	The Regents of the University of California.  All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -12,11 +12,7 @@
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in the
  *    documentation and/or other materials provided with the distribution.
- * 3. All advertising materials mentioning features or use of this software
- *    must display the following acknowledgement:
- *	This product includes software developed by the University of
- *	California, Berkeley and its contributors.
- * 4. Neither the name of the University nor the names of its contributors
+ * 3. Neither the name of the University nor the names of its contributors
  *    may be used to endorse or promote products derived from this software
  *    without specific prior written permission.
  *
@@ -31,35 +27,56 @@
  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
- *
- *	@(#)fts.h	8.3 (Berkeley) 8/14/94
  */
 
-#ifndef	_NBCOMPAT_ERR_H_
-#define	_NBCOMPAT_ERR_H_
+#if HAVE_NBTOOL_CONFIG_H
+#include "nbtool_config.h"
+#endif
 
-#if HAVE_ERR_H
-# include <err.h>
+#include <nbcompat.h>
+#include <nbcompat/cdefs.h>
+
+#if defined(LIBC_SCCS) && !defined(lint)
+#if 0
+static char sccsid[] = "@(#)strdup.c	8.1 (Berkeley) 6/4/93";
 #else
-# if !HAVE_SYS_CDEFS_H
-#  include <nbcompat/cdefs.h>
-# endif
-# include <stdarg.h>
-void	err __P((int, const char *, ...));
-void	errx __P((int, const char *, ...));
-void	verr __P((int, const char *, va_list));
-void	verrx __P((int, const char *, va_list));
+__RCSID("$NetBSD: strndup.c,v 1.2 2024/01/12 19:14:19 wiz Exp $");
+#endif
+#endif /* LIBC_SCCS and not lint */
+
+#if 0
+#include "namespace.h"
 #endif
 
-#if !HAVE_WARN
-# if !HAVE_SYS_CDEFS_H
-#  include <nbcompat/cdefs.h>
-# endif
-# include <stdarg.h>
-void	warn __P((const char *, ...));
-void	warnx __P((const char *, ...));
-void	vwarn __P((const char *, va_list));
-void	vwarnx __P((const char *, va_list));
+#include <nbcompat/assert.h>
+#if HAVE_ERRNO_H
+#include <errno.h>
+#endif
+#include <nbcompat/stdlib.h>
+#include <nbcompat/string.h>
+
+#if 0
+#ifdef __weak_alias
+__weak_alias(strndup,_strndup)
+#endif
 #endif
 
-#endif /* !_NBCOMPAT_ERR_H_ */
+#if !HAVE_STRNDUP
+char *
+strndup(const char *str, size_t n)
+{
+	size_t len;
+	char *copy;
+
+	_DIAGASSERT(str != NULL);
+
+	for (len = 0; len < n && str[len]; len++)
+		continue;
+
+	if (!(copy = malloc(len + 1)))
+		return (NULL);
+	memcpy(copy, str, len);
+	copy[len] = '\0';
+	return (copy);
+}
+#endif /* !HAVE_STRNDUP */
